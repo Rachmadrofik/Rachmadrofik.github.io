@@ -35,6 +35,9 @@ function App() {
             <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Rachmad Rofik. All rights reserved.</p>
           </div>
         </footer>
+
+        {/* Floating WhatsApp Button */}
+        <FloatingWhatsApp />
       </div>
     </Router>
   );
