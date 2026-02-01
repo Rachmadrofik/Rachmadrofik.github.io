@@ -3,7 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
-const NeuralNetwork = ({ count = 120, connectionsDistance = 1.5 }) => {
+const NeuralNetwork = ({ count = 100, connectionsDistance = 2.0 }) => {
   const pointsRef = useRef<THREE.Points>(null);
   const linesRef = useRef<THREE.LineSegments>(null);
   const { mouse, viewport } = useThree();
@@ -74,11 +74,13 @@ const NeuralNetwork = ({ count = 120, connectionsDistance = 1.5 }) => {
 
   return (
     <group>
+      {/* Points - Reduced size to emphasize lines */}
       <Points ref={pointsRef} positions={positions} stride={3} frustumCulled={false}>
-        <PointMaterial transparent color="#00d4ff" size={0.03} sizeAttenuation={true} depthWrite={false} opacity={0.5} />
+        <PointMaterial transparent color="#00d4ff" size={0.02} sizeAttenuation={true} depthWrite={false} opacity={0.6} />
       </Points>
+      {/* Lines - Increased opacity and visibility for "Network" look */}
       <lineSegments ref={linesRef} geometry={linesGeometry}>
-        <lineBasicMaterial color="#667eea" transparent opacity={0.1} depthWrite={false} />
+        <lineBasicMaterial color="#00d4ff" transparent opacity={0.25} depthWrite={false} linewidth={1} />
       </lineSegments>
     </group>
   );
@@ -86,9 +88,9 @@ const NeuralNetwork = ({ count = 120, connectionsDistance = 1.5 }) => {
 
 const NeuralBackground: React.FC = () => {
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none opacity-50">
+    <div className="absolute inset-0 z-0 pointer-events-none opacity-60">
       <Canvas camera={{ position: [0, 0, 3], fov: 60 }}>
-        <NeuralNetwork count={80} connectionsDistance={1.8} />
+        <NeuralNetwork count={90} connectionsDistance={2.2} />
       </Canvas>
     </div>
   );

@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 import { Brain, Code, Cloud, Terminal, Database, Globe, Cpu, BarChart3 } from 'lucide-react';
 import NeuralBackground from '../3d/NeuralBackground';
 
-const skillsData = [
-  {
+const skillsData = [  {
     category: "Artificial Intelligence",
     icon: <Brain className="w-8 h-8" />,
     skills: [
@@ -92,8 +91,9 @@ const SkillCard = ({ category, icon, skills, color, index }: any) => {
 
 const Skills: React.FC = () => {
   return (
-    <section className="py-20 bg-secondary relative">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-secondary relative overflow-hidden">
+      <NeuralBackground />
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
