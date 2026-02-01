@@ -1,12 +1,12 @@
 import React from 'react';
-import Hero from '../components/home/Hero';
+import SvgMaskHero from '../components/home/SvgMaskHero';
 import Skills from '../components/home/Skills';
 import LiveStrategies from '../components/home/LiveStrategies';
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
+      <SvgMaskHero />
       <LiveStrategies />
       <Skills />
     </div>
