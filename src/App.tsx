@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename="/portofolio-ai">
+    <Router>
       <div className="min-h-screen bg-secondary text-white font-sans selection:bg-accent selection:text-secondary">
         <Navbar />
         <main>
