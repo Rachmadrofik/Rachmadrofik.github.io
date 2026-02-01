@@ -21,9 +21,18 @@ function App() {
         </main>
         
         {/* Simple Footer */}
-        <footer className="py-8 border-t border-white/10 mt-20">
-          <div className="container mx-auto px-4 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Rachmad Rofik. All rights reserved.</p>
+        <footer className="py-12 border-t border-white/10 mt-20 bg-secondary/50 backdrop-blur-sm">
+          <div className="container mx-auto px-4 text-center">
+            
+            <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm text-gray-400">
+              <a href="https://jayadana.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">jayadana.my.id</a>
+              <a href="https://sagakomputer.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">sagakomputer.com</a>
+              <a href="https://eawb.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">eawb.my.id</a>
+              <a href="https://wbea.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">wbea.my.id</a>
+              <a href="https://jda.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">jda.my.id</a>
+            </div>
+
+            <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Rachmad Rofik. All rights reserved.</p>
           </div>
         </footer>
       </div>
