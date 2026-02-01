@@ -51,7 +51,7 @@ const Profile: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 justify-center md:justify-start">
                   <Mail className="text-primary-start" size={20} />
-                  <span>cs@jaydana.my.id</span>
+                  <span>cs@jayadana.my.id</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 justify-center md:justify-start">
                   <Phone className="text-primary-start" size={20} />

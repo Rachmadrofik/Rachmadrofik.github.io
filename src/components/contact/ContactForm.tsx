@@ -18,13 +18,16 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      setLoading(false);
-      setSent(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setSent(false), 3000);
-    }, 1500);
+    // Construct mailto link
+    const subject = `Project Inquiry from ${formData.name}`;
+    const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
+    
+    window.location.href = `mailto:cs@jayadana.my.id?subject=${encodeURIComponent(subject)}&body=${body}`;
+    
+    setLoading(false);
+    setSent(true);
+    setFormData({ name: '', email: '', message: '' });
+    setTimeout(() => setSent(false), 3000);
   };
 
   const handleWhatsApp = () => {
