@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Calendar, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
+import profileImg from '../../assets/rachmad.png';
 
 const Profile: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Profile: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary-start to-primary-end rounded-full animate-pulse blur-xl opacity-50" />
             <img 
-              src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=professional+developer+portrait+cyberpunk+style+lighting&image_size=square" 
+              src={profileImg} 
               alt="Rachmad Rofik" 
               className="w-full h-full object-cover rounded-full border-4 border-white/10 relative z-10"
             />
