@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Brain, Code, Cloud, Terminal, Database, Globe, Cpu, BarChart3 } from 'lucide-react';
+import NeuralBackground from '../3d/NeuralBackground';
 
 const skillsData = [
   {

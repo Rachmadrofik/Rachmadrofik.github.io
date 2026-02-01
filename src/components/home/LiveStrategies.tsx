@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TrendingUp, Award, Activity } from 'lucide-react';
+import NeuralBackground from '../3d/NeuralBackground';
 
 interface StrategyProps {
   name: string;
@@ -93,6 +94,7 @@ const LiveStrategies: React.FC = () => {
 
   return (
     <section className="py-20 relative overflow-hidden">
+      <NeuralBackground />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <motion.div
