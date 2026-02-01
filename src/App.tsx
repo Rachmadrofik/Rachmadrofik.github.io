@@ -31,6 +31,9 @@ function App() {
               <a href="https://eawb.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">eawb.my.id</a>
               <a href="https://wbea.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">wbea.my.id</a>
               <a href="https://jda.my.id" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">jda.my.id</a>
+              <a href="https://tradeview.my.id/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">tradeview.my.id</a>
+              <a href="https://stora.world" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">stora.world</a>
+              <a href="https://shop.jda.my.id/l/jayadana?layout=profile" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors border-b border-transparent hover:border-accent pb-1">gumroad</a>
             </div>
 
             <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Rachmad Rofik. All rights reserved.</p>
