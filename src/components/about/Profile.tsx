@@ -34,7 +34,7 @@ const Profile: React.FC = () => {
               <p className="text-xl text-accent mb-6">AI & Digital Technology Expert</p>
               
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I am a passionate technology expert based in Gresik, Indonesia, specializing in Artificial Intelligence, 
+                I am a passionate technology expert based in Sekapuk, Indonesia, specializing in Artificial Intelligence, 
                 Algorithmic Trading (MT5), and modern Web Development. With a deep understanding of cloud infrastructure 
                 and data processing, I build scalable, high-performance solutions that drive business growth.
               </p>
@@ -42,7 +42,7 @@ const Profile: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 text-gray-400 justify-center md:justify-start">
                   <MapPin className="text-primary-start" size={20} />
-                  <span>Gresik, Indonesia</span>
+                  <span>Sekapuk, Indonesia</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400 justify-center md:justify-start">
                   <Briefcase className="text-primary-start" size={20} />

@@ -124,18 +124,18 @@ const ContactForm: React.FC = () => {
           <h3 className="text-xl font-bold mb-4">Location</h3>
           <div className="w-full h-48 rounded-lg overflow-hidden border border-white/10">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.694200843654!2d112.6393526147742!3d-7.161179094828109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ffbd77488059%3A0x627e777e4860714!2sGresik%2C%20Gresik%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1675234567890!5m2!1sen!2sid" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.99616035956!2d112.5290947!3d-6.9472314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77e2eb87254881%3A0x600c01777011d1e4!2sSekapuk%2C%20Ujungpangkah%2C%20Gresik%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1675234567890!5m2!1sen!2sid" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen={false} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="Gresik Location"
+              title="Sekapuk Location"
             ></iframe>
           </div>
           <p className="mt-4 text-gray-400 text-center">
-            Based in Gresik, Indonesia<br/>
+            Based in Sekapuk, Indonesia<br/>
             Available for remote work worldwide
           </p>
         </div>
